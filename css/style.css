@@ -188,25 +188,28 @@ body {
 
 /* Footer */
 footer {
-  background-color: var(--negro);
-  color: white;
+  background: #111;      /* negro oscuro */
+  color: #fff;           /* texto blanco */
   text-align: center;
-  padding: 1rem;
+  padding: 20px;
 }
 
-.social-links {
-  margin-top: 0.5rem;
+footer .social-links {
+  margin-top: 10px;
 }
 
-.social-links a {
-  color: var(--verde-claro);
-  margin: 0 10px;
-  text-decoration: none;
+footer .social-links a {
+  color: #fff;           /* iconos blancos */
+  font-size: 26px;
+  margin: 0 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
-  text-decoration: underline;
+footer .social-links a:hover {
+  color: #a8d5ba;        /* verde claro al pasar mouse */
+  transform: scale(1.2); /* efecto zoom */
 }
+
 
 /* Animaciones */
 .fade-in {
