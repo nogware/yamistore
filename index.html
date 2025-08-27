@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yami Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Yami Store</div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon" id="cart-icon">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Sección Inicio con Slider -->
+<section id="inicio" class="section inicio fade-in">
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="img/ofertadeldia.svg" alt="Incienso">
+        <div class="slide-text">
+          <h1>Inciensos en Ofertas</h1>
+          <p>Marca X</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://via.placeholder.com/1200x500/f5f0e1/222?text=Buda+Decorativo" alt="Buda">
+        <div class="slide-text">
+          <h1>Buda Decorativo</h1>
+          <p>Decora tu espacio con energía positiva</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://via.placeholder.com/1200x500/222/ffffff?text=Velas+Aromáticas" alt="Velas">
+        <div class="slide-text">
+          <h1>Velas Aromáticas</h1>
+          <p>Relajación y armonía para tu vida</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flechas -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <div class="info-cards">
+  <div class="info-card fade-in">
+    <div class="icon">🛒</div>
+    <h3>1. Agrega al carrito</h3>
+    <p>Selecciona tu producto favorito y agrégalo al carrito para guardarlo.</p>
+  </div>
+  <div class="info-card fade-in">
+    <div class="icon">✅</div>
+    <h3>2. Revisa tu pedido</h3>
+    <p>Verifica la cantidad, y detalles antes de confirmar tu pedido.</p>
+  </div>
+  <div class="info-card fade-in">
+    <div class="icon">💬</div>
+    <h3>3. Finaliza por WhatsApp</h3>
+    <p>Envíanos el pedido por WhatsApp y coordinamos la entrega.</p>
+  </div>
+</div>
+
+</section>
+
+  <!-- Sección Productos -->
+  <section id="productos" class="section productos">
+  <h2 class="fade-in">Nuestros Productos</h2>
+<br>
+  <!-- Barra de subcategorías -->
+  <div class="product-filters">
+    <button class="filter-btn active" data-category="todos">Todos</button>
+    <button class="filter-btn" data-category="aromanza">Aromanza</button>
+    <button class="filter-btn" data-category="cascadas">Cascadas</button>
+    <button class="filter-btn" data-category="iluminarte">Iluminarte</button>
+    <button class="filter-btn" data-category="piedras-amuletos">Piedras y Amuletos</button>
+    <button class="filter-btn" data-category="realessenze">Real Essenze</button>
+    <button class="filter-btn" data-category="sagrada">Sagrada Madre</button>
+    <button class="filter-btn" data-category="tao">Tao</button>
+    <button class="filter-btn" data-category="Vrinda">Vrinda</button>
+  </div>
+
+  <div class="product-grid">
+    <!-- Productos categoria: Aromanza -->
+    <div class="product-card fade-in" data-category="aromanza" data-nombre="Incienso Natural">
+      <img src="img/Productos/producto1.png" alt="Incienso">
+      <h3>Incienso Natural</h3>
+      
+      <button class="btn-add-cart">Agregar al carrito</button>
+    </div>
+
+
+    <!-- Productos categoria: Cascadas -->
+    <div class="product-card fade-in" data-category="Cascadas" data-nombre="Buda Decorativo" >
+      <img src="https://via.placeholder.com/200" alt="Buda decorativo">
+      <h3>Buda Decorativo</h3>
+      
+      <button class="btn-add-cart">Agregar al carrito</button>
+    </div>
+
+
+    <!-- Productos categoria: Iluminarte -->
+    <div class="product-card fade-in" data-category="velas" data-nombre="Vela Aromática" >
+      <img src="https://via.placeholder.com/200" alt="Vela aromática">
+      <h3>Vela Aromática</h3>
+      
+      <button class="btn-add-cart">Agregar al carrito</button>
+    </div>
+
+    <!-- Productos categoria: Piedras y Amuletos -->
+
+
+    <!-- Agregá más productos con su categoría correspondiente -->
+  </div>
+
+  <div class="cart-actions fade-in">
+    <button id="btn-whatsapp">Finalizar pedido por WhatsApp</button>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tienda Áurea</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </footer>
+
+<!-- Modal Carrito -->
+<div class="cart-modal" id="cart-modal">
+  <div class="cart-modal-content">
+    <span class="close" id="close-cart">&times;</span>
+    <h2>Tu Carrito</h2>
+    <ul id="cart-list"></ul>
+    <p id="cart-total"></p>
+    <button id="btn-whatsapp-modal">Finalizar por WhatsApp</button>
+  </div>
+</div>
+
+
+  <script src="scripts/scripts.js"></script>
+
+
+</body>
+</html>
